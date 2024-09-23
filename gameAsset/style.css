@@ -1,0 +1,109 @@
+body {
+    background: rgb(10, 10, 10);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.scores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-score {
+    margin-right: 20px;
+    margin: 20px;
+    text-align: center;
+    background: #ccc;
+    padding: 20px;
+    color: #000;
+    border-radius:10px;
+     background-image:linear-gradient(to left,#2df034,#333333) ;
+    box-shadow: 0 4px 8px #fff;
+    transition: transform 0.3s;
+    perspective: 1000px;
+}
+
+.time, .level {
+    margin-right: 20px;
+    margin: 20px;
+    text-align: center;
+    background: #ccc;
+    padding: 20px;
+    color: #000;
+     border-radius:10px;
+     background-image:linear-gradient(to left,#2df034,#333333) ;
+    box-shadow: 0 4px 8px #fff;
+    transition: transform 0.3s;
+    perspective: 1000px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    margin-top: 2rem;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background: rgb(61, 61, 61);
+    z-index: 5;
+    box-shadow: 0 4px 8px #fff;
+    transition: transform 0.3s;
+    perspective: 1000px;
+}
+
+.emoji {
+    background-image: url("emoji.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+.cool-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #2df034;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cool-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000000;
+    transition: width 0.3s;
+}
+
+.cool-button:hover::before {
+    width: 100%;
+  }
+  
+  .cool-button:hover {
+    color: #fff;
+    background-color: #4f4f4f;
+}
